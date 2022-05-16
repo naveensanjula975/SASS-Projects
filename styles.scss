@@ -1,4 +1,4 @@
-
+@import './base';
 
 button {
     background-color: $primarycolor;
@@ -8,9 +8,9 @@ h2 {
     color: $primarycolor;
 }
 
-nav ul li a{
+// nav ul li a{
 
-}
+// }
 
 nav{
     ul{
@@ -21,5 +21,20 @@ nav{
                 
             }
         }
+    }
+}
+
+@mixin alertBox {
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
+    background-color: aquamarine;
+}
+
+.alert {
+    
+    &.done{
+        background: green;
+        border-radius: 2px;
     }
 }
